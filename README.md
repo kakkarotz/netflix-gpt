@@ -1,3 +1,22 @@
+# NetflixGPT
+
+- Create React App
+- Configured TailwindCSS
+- Header
+- Routing of App
+- Login Form
+- SignUp Form
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deploying our App to Production
+- Create SignUp User Account
+- Implement Sign In User Api
+- Created Redux Store with userSlice
+- Implemented SignOut
+- UpdateProfile
+- Fetch from TMDB Movies APIs
+
 # Features
 
 - Login/Sign Up
