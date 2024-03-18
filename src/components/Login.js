@@ -7,15 +7,14 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BACKGROUND, USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const name = useRef(null);
@@ -47,8 +46,7 @@ const Login = () => {
           console.log(user, "USER-UP");
           updateProfile(auth.currentUser, {
             displayName: name.current.value,
-            photoURL:
-              "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               //   alert("Profile Updated");
@@ -61,8 +59,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
-
               // ...
             })
             .catch((error) => {
@@ -83,8 +79,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user, "USER-IN");
-          navigate("/browse");
         })
         .catch((error) => {
           console.log(error);
@@ -99,10 +93,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/94eb5ad7-10d8-4cca-bf45-ac52e0a052c0/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg"
-          alt="background_image"
-        />
+        <img src={BACKGROUND} alt="background_image" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
