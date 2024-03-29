@@ -42,7 +42,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute px-10 py-6 bg-gradient-to-b from from-black w-full flex justify-between">
+    <div className="absolute z-50 px-10 py-6 bg-gradient-to-b from from-black w-full flex justify-between border-red-700">
       <img className="w-40" src={LOGO} alt="logo" />
       <div className="flex gap-2">
         <img src={user?.photoURL} alt="user" className="w-12" />

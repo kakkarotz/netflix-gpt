@@ -6,3 +6,12 @@ export const BACKGROUND =
 
 export const USER_AVATAR =
   "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png";
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ODM5YjI2ZmY1NDgyYjIzYjQ3NmUxZDZjODJhNWQ3YyIsInN1YiI6IjY1ZjdmNDdiZDhmNDRlMDE3YzUxZmM2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aCSFlSTGiPRTE6CoPOq_thilpg_XxqQmDk0P9QGOaTA",
+  },
+};
