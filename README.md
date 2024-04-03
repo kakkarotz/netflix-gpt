@@ -29,6 +29,16 @@
 - Fetch Data for Trailer Video
 - Update Store with Trailer Video Data
 - Embedded the youtube video and make it autoplay and mute
+- Tailwind classes to make Main Container look good
+- Build Secondary Component
+- Build MovieList
+- Build MovieCard
+- TMDB Image CDN URL
+- created 4 customHooks
+- GPT SearchBar
+- GPT Search Page
+- Multi - Lanuage Feature in our App
+- Integrate GPT APIs
 
 # Features
 
